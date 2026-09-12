@@ -17,6 +17,9 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: https://satangel2222.github.io/pelican-bike/
     steps:
       - name: Checkout
         uses: actions/checkout@v4
